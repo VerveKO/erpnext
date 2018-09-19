@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75533c92-d0b5-4fe9-9068-91d41578d0b4" name="Default Changelist" comment="" />
+    <list default="true" id="75533c92-d0b5-4fe9-9068-91d41578d0b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/erpnext/accounts/doctype/payment_entry/payment_entry.py" beforeDir="false" afterPath="$PROJECT_DIR$/erpnext/accounts/doctype/payment_entry/payment_entry.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,30 +26,44 @@
         <counts>
           <entry key="js" value="6" />
           <entry key="json" value="2" />
-          <entry key="py" value="31" />
+          <entry key="py" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="6" />
-          <entry key="Python" value="31" />
+          <entry key="Python" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="43" />
+          <entry key="py" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="43" />
+          <entry key="Python" value="91" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/erpnext/accounts/doctype/payment_entry/payment_entry.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <folding>
+                <element signature="e#144#183#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -58,6 +74,7 @@
       <find>Full</find>
       <find>Custo</find>
       <find>get_customer_list</find>
+      <find>middle</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -70,6 +87,8 @@
         <option value="$USER_HOME$/AppData/Local/Temp/scp57201/opt/bench/verveerp/apps/erpnext/erpnext/selling/doctype/customer/customer_list.js" />
         <option value="$PROJECT_DIR$/erpnext/hooks.py" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp21003/opt/bench/verveerp/apps/erpnext/erpnext/selling/doctype/customer/customer.py" />
+        <option value="$USER_HOME$/AppData/Local/Temp/scp27842/opt/bench/verveerp/apps/erpnext/erpnext/accounts/doctype/payment_entry/payment_entry.py" />
+        <option value="$PROJECT_DIR$/erpnext/accounts/doctype/payment_entry/payment_entry.py" />
       </list>
     </option>
   </component>
@@ -117,14 +136,22 @@
               <item name="erpnext" type="b2602c69:ProjectViewProjectNode" />
               <item name="erpnext" type="462c0819:PsiDirectoryNode" />
               <item name="erpnext" type="462c0819:PsiDirectoryNode" />
-              <item name="selling" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="erpnext" type="b2602c69:ProjectViewProjectNode" />
               <item name="erpnext" type="462c0819:PsiDirectoryNode" />
               <item name="erpnext" type="462c0819:PsiDirectoryNode" />
-              <item name="selling" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
               <item name="doctype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="erpnext" type="b2602c69:ProjectViewProjectNode" />
+              <item name="erpnext" type="462c0819:PsiDirectoryNode" />
+              <item name="erpnext" type="462c0819:PsiDirectoryNode" />
+              <item name="accounts" type="462c0819:PsiDirectoryNode" />
+              <item name="doctype" type="462c0819:PsiDirectoryNode" />
+              <item name="payment_entry" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,6 +191,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="33" width="1708" height="1043" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2035928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -298,13 +326,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57201/opt/bench/verveerp/apps/erpnext/erpnext/selling/doctype/customer/customer_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp57201/opt/bench/verveerp/apps/erpnext/erpnext/selling/doctype/customer/customer_list.js" />
     <entry file="file://$PROJECT_DIR$/erpnext/selling/doctype/customer/customer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -312,13 +334,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21003/opt/bench/verveerp/apps/erpnext/erpnext/selling/doctype/customer/customer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4420">
-          <caret line="260" column="54" lean-forward="true" selection-start-line="260" selection-start-column="54" selection-end-line="260" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp21003/opt/bench/verveerp/apps/erpnext/erpnext/selling/doctype/customer/customer.py" />
     <entry file="file://$PROJECT_DIR$/erpnext/selling/doctype/customer/customer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -337,6 +353,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp31723/opt/bench/verveerp/apps/erpnext/erpnext/hooks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp27842/opt/bench/verveerp/apps/erpnext/erpnext/accounts/doctype/payment_entry/payment_entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="49" lean-forward="true" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding>
+            <element signature="e#144#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/scp29839/opt/bench/verveerp/apps/erpnext/erpnext/accounts/doctype/payment_request/payment_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="51" column="186" selection-start-line="51" selection-start-column="186" selection-end-line="51" selection-end-column="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erpnext/accounts/doctype/payment_entry/payment_entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding>
+            <element signature="e#144#183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
