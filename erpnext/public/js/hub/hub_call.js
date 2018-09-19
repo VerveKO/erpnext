@@ -22,23 +22,13 @@ hub.call = function call_hub_method(method, args={}, clear_cache_on_event) { // 
 			});
 		}
 
-		let res;
-		if (hub.is_server) {
-			res = frappe.call({
-				method: 'hub.hub.api.' + method,
-				args
-			});
-		} else {
-			res = frappe.call({
-				method: 'erpnext.hub_node.api.call_hub_method',
-				args: {
-					method,
-					params: args
-				}
-			});
-		}
-
-		res.then(r => {
+		frappe.call({
+			method: 'erpnext.hub_node.api.call_hub_method',
+			args: {
+				method,
+				params: args
+			}
+		}).then(r => {
 			if (r.message) {
 				const response = r.message;
 				if (response.error) {

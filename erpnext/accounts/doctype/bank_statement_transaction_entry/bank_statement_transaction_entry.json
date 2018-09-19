@@ -14,7 +14,6 @@
  "fields": [
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -47,7 +46,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -79,7 +77,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -111,7 +108,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -144,7 +140,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -175,7 +170,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -208,7 +202,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -241,7 +234,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -274,7 +266,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -306,12 +297,10 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
    "columns": 0, 
-   "depends_on": "", 
    "fieldname": "section_break_6", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -339,7 +328,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -372,12 +360,10 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
    "columns": 0, 
-   "depends_on": "eval:doc.new_transaction_items && doc.new_transaction_items.length", 
    "fieldname": "section_break_9", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -404,12 +390,10 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
    "columns": 0, 
-   "depends_on": "", 
    "fieldname": "match_invoices", 
    "fieldtype": "Button", 
    "hidden": 0, 
@@ -437,7 +421,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -468,7 +451,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -500,7 +482,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -531,7 +512,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -563,12 +543,10 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
    "columns": 0, 
-   "depends_on": "eval:doc.new_transaction_items && doc.new_transaction_items.length", 
    "fieldname": "section_break_18", 
    "fieldtype": "Section Break", 
    "hidden": 0, 
@@ -596,7 +574,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -629,7 +606,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -661,7 +637,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -694,7 +669,6 @@
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -735,7 +709,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2018-09-14 18:04:44.170455", 
+ "modified": "2018-04-07 17:01:47.480572", 
  "modified_by": "Administrator", 
  "module": "Accounts", 
  "name": "Bank Statement Transaction Entry", 
@@ -744,6 +718,7 @@
  "permissions": [
   {
    "amend": 1, 
+   "apply_user_permissions": 0, 
    "cancel": 1, 
    "create": 1, 
    "delete": 1, 
@@ -763,6 +738,7 @@
   }, 
   {
    "amend": 1, 
+   "apply_user_permissions": 0, 
    "cancel": 1, 
    "create": 1, 
    "delete": 1, 

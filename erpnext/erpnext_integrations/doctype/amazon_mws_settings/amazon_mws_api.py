@@ -9,7 +9,7 @@ import urllib
 import hashlib
 import hmac
 import base64
-from erpnext.erpnext_integrations.doctype.amazon_mws_settings import xml_utils
+import xml_utils
 import re
 try:
 	from xml.etree.ElementTree import ParseError as XMLError

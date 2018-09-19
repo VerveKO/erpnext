@@ -42,14 +42,7 @@ frappe.ui.form.on("Stock Reconciliation", {
 	},
 
 	get_items: function(frm) {
-		frappe.prompt({label:"Warehouse", fieldtype:"Link", options:"Warehouse", reqd: 1,
-			"get_query": function() {
-				return {
-					"filters": {
-						"company": frm.doc.company,
-					}
-				}
-			}},
+		frappe.prompt({label:"Warehouse", fieldtype:"Link", options:"Warehouse", reqd: 1},
 			function(data) {
 				frappe.call({
 					method:"erpnext.stock.doctype.stock_reconciliation.stock_reconciliation.get_items",

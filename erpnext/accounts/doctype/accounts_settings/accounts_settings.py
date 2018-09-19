@@ -12,7 +12,7 @@ from frappe.custom.doctype.property_setter.property_setter import make_property_
 
 class AccountsSettings(Document):
 	def on_update(self):
-		frappe.clear_cache()
+		pass
 
 	def validate(self):
 		self.validate_stale_days()

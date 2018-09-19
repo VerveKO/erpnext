@@ -53,10 +53,8 @@ export default {
 	},
 	mounted() {
 		frappe.route.on('change', () => {
-			if (frappe.get_route()[0] === 'marketplace') {
-				this.set_current_page();
-				frappe.utils.scroll_to(0);
-			}
+			this.set_current_page();
+			frappe.utils.scroll_to(0);
 		});
 	},
 	methods: {

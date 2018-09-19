@@ -14,7 +14,6 @@
  "fields": [
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -41,12 +40,10 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -73,12 +70,10 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -100,18 +95,16 @@
    "precision": "", 
    "print_hide": 0, 
    "print_hide_if_no_value": 0, 
-   "read_only": 0, 
+   "read_only": 1, 
    "remember_last_selected_value": 0, 
    "report_hide": 0, 
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -139,12 +132,10 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -170,12 +161,10 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -202,12 +191,10 @@
    "reqd": 1, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -224,7 +211,7 @@
    "label": "Invoice Type", 
    "length": 0, 
    "no_copy": 0, 
-   "options": "Sales Invoice\nPurchase Invoice\nJournal Entry", 
+   "options": "Purchase Invoice\nSales Invoice\nJournal Entry", 
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -235,12 +222,10 @@
    "reqd": 1, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -268,12 +253,10 @@
    "reqd": 1, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -300,12 +283,10 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }, 
   {
    "allow_bulk_edit": 0, 
-   "allow_in_quick_entry": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -332,7 +313,6 @@
    "reqd": 0, 
    "search_index": 0, 
    "set_only_once": 0, 
-   "translatable": 0, 
    "unique": 0
   }
  ], 
@@ -346,7 +326,7 @@
  "issingle": 0, 
  "istable": 1, 
  "max_attachments": 0, 
- "modified": "2018-09-14 19:03:30.949831", 
+ "modified": "2017-11-15 09:41:45.840947", 
  "modified_by": "Administrator", 
  "module": "Accounts", 
  "name": "Bank Statement Transaction Invoice Item", 
@@ -360,6 +340,5 @@
  "sort_field": "modified", 
  "sort_order": "DESC", 
  "track_changes": 1, 
- "track_seen": 0, 
- "track_views": 0
+ "track_seen": 0
 }

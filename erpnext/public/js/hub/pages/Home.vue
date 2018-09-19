@@ -60,9 +60,9 @@ export default {
 	},
 	methods: {
 		get_items() {
-			hub.call('get_data_for_homepage', frappe.defaults ? {
+			hub.call('get_data_for_homepage', {
 				country: frappe.defaults.get_user_default('country')
-			} : null)
+			})
 			.then((data) => {
 				this.show_skeleton = false;
 

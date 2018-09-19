@@ -12,10 +12,8 @@ import EventEmitter from './event_emitter';
 
 frappe.provide('hub');
 frappe.provide('erpnext.hub');
-frappe.provide('frappe.route');
 
 $.extend(erpnext.hub, EventEmitter.prototype);
-$.extend(frappe.route, EventEmitter.prototype);
 
 erpnext.hub.Marketplace = class Marketplace {
 	constructor({ parent }) {
@@ -30,18 +28,15 @@ erpnext.hub.Marketplace = class Marketplace {
 			this.setup_events();
 			this.refresh();
 
-			if (!hub.is_server) {
-				if (!hub.is_seller_registered()) {
-					this.page.set_primary_action('Become a Seller', this.show_register_dialog.bind(this))
-				} else {
-					this.page.set_secondary_action('Add Users', this.show_add_user_dialog.bind(this));
-				}
+			if (!hub.is_seller_registered()) {
+				this.page.set_primary_action('Become a Seller', this.show_register_dialog.bind(this))
+			} else {
+				this.page.set_secondary_action('Add Users', this.show_add_user_dialog.bind(this));
 			}
 		});
 	}
 
 	setup_header() {
-		if (hub.is_server) return;
 		this.page.set_title(__('Marketplace'));
 	}
 
@@ -81,11 +76,9 @@ erpnext.hub.Marketplace = class Marketplace {
 			render: h => h(PageContainer)
 		});
 
-		if (!hub.is_server) {
-			erpnext.hub.on('seller-registered', () => {
-				this.page.clear_primary_action();
-			});
-		}
+		erpnext.hub.on('seller-registered', () => {
+			this.page.clear_primary_action();
+		});
 	}
 
 	refresh() {
@@ -189,7 +182,7 @@ erpnext.hub.Marketplace = class Marketplace {
 	}
 
 	update_hub_settings() {
-		return hub.get_settings().then(doc => {
+		return frappe.db.get_doc('Marketplace Settings').then(doc => {
 			hub.settings = doc;
 		});
 	}
@@ -205,15 +198,6 @@ Object.assign(hub, {
 			.filter(hub_user => hub_user.user === frappe.session.user)
 			.length === 1;
 	},
-
-	get_settings() {
-		if (frappe.session.user === 'Guest') {
-			return Promise.resolve({
-				registered: 0
-			});
-		}
-		return frappe.db.get_doc('Marketplace Settings');
-	}
 });
 
 /**

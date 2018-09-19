@@ -3,9 +3,6 @@
         "public/less/erpnext.less",
         "public/less/hub.less"
     ],
-    "css/marketplace.css": [
-        "public/less/hub.less"
-    ],
     "js/erpnext-web.min.js": [
         "public/js/website_utils.js",
         "public/js/shopping_cart.js"

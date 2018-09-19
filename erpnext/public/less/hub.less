@@ -1,7 +1,6 @@
-@import "variables.less";
-@import (reference) "desk.less";
+@import "../../../../frappe/frappe/public/less/variables.less";
 
-body[data-route*="marketplace"] {
+body[data-route^="marketplace/"] {
 	.layout-side-section {
 		padding-top: 25px;
 		padding-left: 5px;
@@ -25,22 +24,6 @@ body[data-route*="marketplace"] {
 
 	input, textarea {
 		font-size: @text-medium;
-	}
-
-	.hub-image {
-		height: 200px;
-	}
-
-	.hub-image-loading, .hub-image-broken {
-		.img-background();
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		span {
-			font-size: 32px;
-			color: @text-extra-muted;
-		}
 	}
 
 	.progress-bar {
@@ -153,7 +136,6 @@ body[data-route*="marketplace"] {
 	}
 
 	.hub-item-image {
-		position: relative;
 		border: 1px solid @border-color;
 		border-radius: 4px;
 		overflow: hidden;

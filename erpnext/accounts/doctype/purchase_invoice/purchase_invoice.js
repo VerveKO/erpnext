@@ -76,11 +76,6 @@ erpnext.accounts.PurchaseInvoice = erpnext.buying.BuyingController.extend({
 			}
 		}
 
-		if (doc.outstanding_amount > 0 && !cint(doc.is_return)) {
-			cur_frm.add_custom_button(__('Payment Request'),
-				this.make_payment_request, __("Make"));
-		}
-
 		if(doc.docstatus===0) {
 			this.frm.add_custom_button(__('Purchase Order'), function() {
 				erpnext.utils.map_current_doc({

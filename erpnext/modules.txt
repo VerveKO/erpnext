@@ -11,6 +11,7 @@ Support
 Utilities
 Shopping Cart
 Assets
+Hub Node
 Portal
 Maintenance
 Education
@@ -21,4 +22,3 @@ Agriculture
 ERPNext Integrations
 Non Profit
 Hotels
-Hub Node
