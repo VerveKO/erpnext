@@ -389,7 +389,7 @@ def update_middleware(doc, method):
     if doc.references:
         for item in doc.references:
             header = {'Content-Type': "application/json"}
-            url = 'http://myserver:8001/middlewareserver/callback/'
+            url = 'http://159.203.68.204:8854/middlewareapi/callback/'
             data = {
                 "reference_doctype": item.reference_doctype,
                 "creation": item.creation,
