@@ -4,6 +4,7 @@
 
 from __future__ import unicode_literals
 import frappe
+import requests
 from frappe import _
 from frappe.model.document import Document
 from frappe.utils import flt, nowdate, get_url
@@ -382,6 +383,23 @@ def make_status_as_paid(doc, method):
 			if doc.status != "Paid":
 				doc.db_set('status', 'Paid')
 				frappe.db.commit()
+
+@frappe.whitelist()
+def update_middleware(doc, method):
+    if doc.references:
+        for item in doc.references:
+            header = {'Content-Type': "application/json"}
+            url = 'http://myserver:8001/middlewareserver/callback/'
+            data = {
+                "reference_doctype": item.reference_doctype,
+                "creation": item.creation,
+                "name": item.name,
+                "paid_amount": item.total_amount,
+                "customer": item.reference_name
+            }
+            res = requests.post(url, data=data, headers=header)
+            return res
+
 
 def get_dummy_message(doc):
 	return frappe.render_template("""{% if doc.contact_person -%}
